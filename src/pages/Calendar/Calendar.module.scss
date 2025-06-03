@@ -1,0 +1,63 @@
+.Calendar {
+  padding: 20px 10px 100px;
+}
+
+.year {
+  &:not(:last-of-type) {
+    margin-bottom: 200px;
+  }
+}
+
+.months {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.month {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  padding: 20px 0;
+  background-color: rgb(226, 226, 226);
+  padding: 20px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: auto;
+  // flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.day {
+  width: 28px;
+  height: 28px;
+  background-color: rgb(195, 195, 195);
+  position: relative;
+  transition: .2s transform;
+
+  &:hover {
+    transform: scale(1.1);
+    .dayInfo {
+      opacity: 1;
+    }
+  }
+}
+
+.dayInfo {
+  position: absolute;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  opacity: 0;
+  z-index: 2;
+  bottom: 30px;
+  pointer-events: none;
+  transition: .2s opacity;
+
+}

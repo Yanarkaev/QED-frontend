@@ -1,0 +1,16 @@
+.Navbar{
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background-color: #000000;
+    padding: 20px;
+
+    a{
+        color: #fff;
+    }
+}

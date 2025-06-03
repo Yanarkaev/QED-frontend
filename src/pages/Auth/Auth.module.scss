@@ -1,0 +1,21 @@
+.Auth {
+  margin: 0 auto;
+  max-width: 300px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .inner {
+    width: 100%;
+    text-align: center;
+
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+  }
+}
